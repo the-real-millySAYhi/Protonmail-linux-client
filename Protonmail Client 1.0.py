@@ -2,6 +2,10 @@ stream = open("versiontool.py")
 read_file = stream.read()
 exec(read_file)
 
+stream = open("getroot.py")
+read_file = stream.read()
+exec(read_file)
+
 stream = open("getostype.py")
 read_file = stream.read()
 exec(read_file)
