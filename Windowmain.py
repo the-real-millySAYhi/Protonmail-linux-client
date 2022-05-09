@@ -10,6 +10,10 @@ from PyQt5 import QtGui
 raw = open("root file directory.fdir","r")
 root = raw.read()
 
+versionraw = open(root + "\version.info")
+version = versionraw.read()
+versionraw.close()
+
 System = open(root + "\OS Data\OStype.info","r")
 System = System.read()
 
@@ -34,7 +38,7 @@ if (System == "Windows"):
 
     
 MyApp = QApplication(sys.argv)
-QApplication.setApplicationName('Protonmail Linux client Beta 1.0')
+QApplication.setApplicationName('Protonmail desktop client' version)
 window = Window()
 MyApp.exec_()
 
