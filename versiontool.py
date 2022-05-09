@@ -1,10 +1,10 @@
 #-------change these---------------
 version = ("1.2")
-Beta = (true)
+Beta = (True)
 #----------------------------------
 
 
-if(Beta == true):
+if(Beta == True):
   trueversion = (version + " Beta")
 else:
   trueversion = (version)
@@ -14,5 +14,5 @@ root = raw.read()
 path = (root + "\Software data\ ")
 
 softwareV = open(path + "version.info","w")
-softwareV.write(version)
+softwareV.write(trueversion)
 softwareV.close()
